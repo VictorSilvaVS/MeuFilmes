@@ -1,0 +1,525 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="VictorSilva" />
+    <meta
+      name="description"
+      content="MeuFilmes - Filmes, Séries e Animes."
+    />
+    <meta
+      name="keywords"
+      content="MeuFilmes,meufilmes,series,animes,filmes,hd,dublado,sem-anuncios,assistir-filmes,assistir-series, assistir-animes"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#FF0000" />
+    <meta name="copyright" content="VICode 2022" />
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta
+      property="og:image"
+      content="https://VICode/assets/image/preview.png"
+    />
+    <meta
+      property="og:title"
+      content="MeuFilmes"
+    />
+    <meta
+      property="og:description"
+      content="Filmes, séries e animes sem anúncio"
+    />
+    <title>MeuFilmes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="./assets/css/styleindex.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/image/logo-vito2.png"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="assets/image/logo-vito2.png" />
+    <link rel="apple-touch-icon" href="assets/image/logo-vito2.png" />
+    <link rel="canonical" href="https://VICode.com/" />
+    <script src="assets/js/svg-inject.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <div class="grid-layout">
+        <nav>
+          <img
+            src="assets/image/vito-logo1.png"
+            alt="Logo VictorSilva"
+            width="150px"
+            height="25px"
+          />
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+            <li><a href="#">Inicio</a></li>
+            <li>
+              <a href="#projects">Filmes</a>
+            </li>
+            <li>
+              <a href="#services">Séries</a>
+            </li>
+            <li>
+              <a href="#skills">Animes</a>
+            </li>
+            <li>
+              <a href="#openModal">Doação</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="s-home">
+        <div class="grid-layout">
+          <div id="home">
+            <div id="home-container-text">
+              <h1 class="delayMediumReveal">
+                Olá, Bem-vindo ao<br />
+                <span id="home-name">MeuFilmes.</span><br />
+                <span class="typewriter">
+                  Filmes, séries e animes.
+                </span>
+              </h1>
+              <a
+                href="https://www.testeavelocidade.net/p/velocidade-da-internet.html"
+                rel="noopener"
+                target="_blank"
+                alt="Recomendado: 5Mb"
+                class="delayMediumReveal"
+              >
+                Testar conexão?
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="openModal" class="modalDialog">
+          <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <h2 class="titulo-doe">Ajude!</h2>
+            <p class="doação">Doe para ajudar a manter o site no ar!</p>
+            <img id="imagem-doe" src="assets/image/QR Code.jfif" alt="QR-CODE">
+            <img id="pix"src="https://www.bcb.gov.br/content/estabilidadefinanceira/piximg/logo_pix.png" alt="Doe pelo pix" sizes="" srcset=""><p class="doação1">Escaneie</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="s-about">
+        <div class="grid-layout">
+          <div id="about">
+            <div id="about-photo">
+              <img
+                src="assets/image/vitocode.png"
+                width="400px"
+                height="400px"
+                alt="ilustração do VictorSilva"
+                class="delayMediumReveal"
+                id="VICTORSILVA"
+              />
+              <div class="about-figure figure-one icon-one delayExtraBigReveal">
+                <img
+                  src="assets/icons/paramount.png"
+                  width="45px"
+                  height="45px"
+                  alt="ícone html"
+                />
+              </div>
+              <div class="about-figure figure-two icon-two delayExtraBigReveal">
+                <img
+                  src="assets/icons/fox.png"
+                  width="45px"
+                  height="45px"
+                  alt="ícone css"
+                />
+              </div>
+              <div
+                class="about-figure figure-three icon-three delayExtraBigReveal"
+              >
+                <img
+                  src="assets/icons/universal-studios-1.svg"
+                  width="45px"
+                  height="45px"
+                  alt="ícone javascript"
+                />
+              </div>
+            </div>
+            <!-- Pop-up Modal -->
+    <div class="modal fade" id="pixModal" tabindex="-1" aria-labelledby="pixModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="pixModalLabel">Ajude o MeuFilmes!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body text-center">
+                  <p>Doe para ajudar a manter o site no ar!</p>
+                  <img src="assets/image/QR Code.jfif" alt="QR-CODE" class="img-fluid">
+                  <img src="https://www.bcb.gov.br/content/estabilidadefinanceira/piximg/logo_pix.png" alt="Doe pelo pix" class="img-fluid mt-3">
+                  <p class="mt-2">Escaneie o QR Code para doar</p>
+              </div>
+          </div>
+      </div>
+  </div>
+            <article id="about-text">
+              <h2 class="delaySmallReveal">Historia<span>.</span></h2>
+              <p class="delayMediumReveal">
+                Criado para assistir filmes, séries e animes sem quaisquer anúncios.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="s-projects">
+        <div class="grid-layout">
+          <h2 class="delaySmallReveal">Filmes <span>.</span></h2>
+          <div id="projects">
+            <article class="intervalCardReveal"> <a href="./filmes/HarryPotter.html"
+              rel="noopener" >
+              <h3>Harry Potter</h3>
+              <p>
+                Toda a saga.
+              </p></a>
+            </article>
+            <article class="intervalCardReveal"> <a href="./filmes/vanhelsing.html"
+              rel="noopener" >
+              <h3>Van Helsing</h3>
+              <p>
+                O Caçador de Monstros.
+              </p></a>
+            </article>
+
+            <article class="intervalCardReveal"> <a href="./filmes/jurassicworld.html"
+              rel="noopener" >
+              <h3>Jurassic World</h3>
+              <p>
+                Toda trilogia.
+              </p></a>
+            </article>
+            <article class="intervalCardReveal"> <a href="./filmes/sonic.html"
+              rel="noopener" >
+              <h3>Sonic</h3>
+              <p>
+                  Todos os filmes.
+              </p></a>
+            </article>
+            <article class="intervalCardReveal"> <a href="./filmes/transformers.html"
+              rel="noopener" >
+              <h3>Transformers</h3>
+              <p>
+                Toda quadrilogia.
+              </p></a>
+            </article>
+            <article class="intervalCardReveal"> <a href="./filmes/godzilla.html"
+              rel="noopener" >
+              <h3>Godzilla</h3>
+              <p>
+                Toda trilogia Godzilla.
+              </p></a>
+            </article>
+            <article class="intervalCardReveal"> <a href="./filmes/ultimohomem.html"
+              rel="noopener" >
+              <h3>Até Último Homem</h3>
+              <p>until the last man
+              </p></a>
+            </article>
+            <article class="intervalCardReveal"> <a href="./filmes/vingadores.html"
+              rel="noopener" >
+              <h3>Os Vingadores</h3>
+              <p>
+                Toda quadrilogia.
+              </p></a>
+            </article>
+            <article class="intervalCardReveal"> <a href="./filmes/panteranegra.html"
+              rel="noopener" >
+              <h3>Pantera Negra</h3>
+              <p>
+                Dublado.
+              </p></a>
+            </article>
+            <article class="intervalCardReveal"> <a href="./filmes/alien.html"
+              rel="noopener" >
+              <h3>Alien</h3>
+              <p>
+                Toda franquia.
+              </p></a>
+            </article>
+            <article class="intervalCardReveal"> <a href="./filmes/morbius.html"
+              rel="noopener" >
+              <h3>Morbius</h3>
+              <p>
+                Dublado.
+              </p></a>
+            </article>
+            <article class="intervalCardReveal"> <a href="./filmes/hmanh.html"
+              rel="noopener" >
+              <h3>Homem-Aranha</h3>
+              <p>
+                Toda série de filmes.
+              </p></a>
+            </article>
+            <article class="intervalCardReveal"> <a href="./filmes/ironmen.html"
+              rel="noopener" >
+              <h3>Homem De Ferro</h3>
+              <p>
+                Toda trilógia.
+              </p></a>
+            </article>
+            <article class="intervalCardReveal"> <a href="./filmes/uncharted.html"
+              rel="noopener" >
+              <h3>Uncharted</h3>
+              <p>
+                Fora Do Mapa.
+              </p></a>
+            </article>
+            <article class="intervalCardReveal"> <a href="./filmes/painss.html"
+              rel="noopener" >
+              <h3>Pai Nosso?</h3>
+              <p>
+                Our Father.
+              </p></a>
+            </article>
+            <article class="intervalCardReveal"> <a href="./filmes/utmritl.html"
+              rel="noopener" >
+              <h3>O Último Ritual</h3>
+              <p>
+                The Last Rite.
+              </p></a>
+            </article>
+            <article class="intervalCardReveal"> <a href="./filmes/DSRTODORO.html"
+              rel="noopener" >
+              <h3>Deserto do Ouro</h3>
+              <p>
+                Gold.
+              </p></a>
+            </article>
+            <article class="intervalCardReveal"> <a href="./filmes/UMALCAODESPCA.html"
+              rel="noopener" >
+              <h3>Uma Lição de Esperança</h3>
+              <p>
+                Persischstunden.
+              </p></a>
+            </article>
+            <article class="intervalCardReveal"> <a href="./filmes/TICETECDFSRSDLEI.html"
+              rel="noopener" >
+              <h3>Tico e Teco</h3>
+              <p>
+                Defensores da Lei.
+              </p></a>
+            </article>
+            <article class="intervalCardReveal"> <a href="./filmes/kungFu.html"
+              rel="noopener" >
+              <h3>Kung Fu Panda</h3>
+              <p>
+                Toda a série de filme.
+              </p></a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="s-services">
+        <div class="grid-layout">
+          <h2 class="delaySmallReveal">Séries <span>.</span></h2>
+          <div id="services">
+            <article class="intervalCardReveal">
+              <a href="./filmes/halo.html"
+              rel="noopener" >
+              <h3>Halo</h3>
+              <p>
+                Todos os episódios.
+              </p></a>
+            </article>
+
+            <article class="intervalCardReveal">
+              <a href="./filmes/cavaleirolua.html"
+              rel="noopener" >
+              <h3>Cavaleiro Da Lua</h3>
+              <p>
+                Todos os episódios.
+              </p></a>
+            </article>
+
+            <article class="intervalCardReveal"> <a href="./filmes/the witcher/TheWitcher.html"
+              rel="noopener" >
+              <h3>The Witcher</h3>
+              <p>
+                Todas as temporadas.
+              </p></a>
+            </article>
+            <article class="intervalCardReveal"> <a href="./filmes/brokninenine.html"
+              rel="noopener" >
+              <h3>Broklyn Nine-Nine</h3>
+              <p>
+                Todas as temporadas.
+              </p></a>
+            </article>
+            <article class="intervalCardReveal"> <a href="./filmes/chernobyl.html"
+              rel="noopener" >
+              <h3>Chernobyl</h3>
+              <p>
+                Todos os episódios.
+              </p></a>
+            </article>
+            <article class="intervalCardReveal"> <a href="./filmes/quest.html"
+              rel="noopener" >
+              <h3>The Quest - A Missão</h3>
+              <p>
+                Todos os episódios.
+              </p></a>
+            </article>
+            <article class="intervalCardReveal"> <a href="./filmes/REACAONUCLEAR.html"
+              rel="noopener" >
+              <h3>Reação Nuclear</h3>
+              <p>
+                Todos os episódios.
+              </p></a>
+            </article>
+            <article class="intervalCardReveal"> <a href="./filmes/rnd6.html"
+              rel="noopener" >
+              <h3>Round 6</h3>
+              <p>
+                Todos os episódios.
+              </p></a>
+            </article>
+            <article class="intervalCardReveal"> <a href="./filmes/TBBTT.html"
+              rel="noopener" >
+              <h3>The Big Bang Theory</h3>
+              <p>
+                Todas as temporadas.
+              </p></a>
+            </article>
+            <article class="intervalCardReveal"> <a href="./filmes/TBBTT.html"
+              rel="noopener" >
+              <h3>The Big Bang Theory</h3>
+              <p>
+                Todas as temporadas.
+              </p></a>
+            </article>
+            <article class="intervalCardReveal"> <a href="./filmes/TBBTT.html"
+              rel="noopener" >
+              <h3>The Big Bang Theory</h3>
+              <p>
+                Todas as temporadas.
+              </p></a>
+            </article>
+            <article class="intervalCardReveal"> <a href="./filmes/TBBTT.html"
+              rel="noopener" >
+              <h3>The Big Bang Theory</h3>
+              <p>
+                Todas as temporadas.
+              </p></a>
+            </article>
+          </div>
+        </div>
+        
+      </section>
+
+      <section id="s-skills">
+        <div id="skills">
+        <section id="s-projects">
+          <div class="grid-layout">
+            <h2 class="delaySmallReveal">Animes <span>.</span></h2>
+            <div id="projects">
+              <article class="intervalCardReveal"><a href="DemonSlayer.html"
+                rel="noopener" >
+                <h3>Demon Slayer</h3>
+                <p>
+                  Mugin train/anime.
+                </p></a>
+              </article>
+  
+              <article class="intervalCardReveal"> <a href="./filmes/filmes/OSsimpsons/OsSimpsons.html"
+                rel="noopener" >
+                <h3>Os Simpsons</h3>
+                <p>
+                  Todas as temporadas.
+                </p></a>
+              </article>
+  
+              <article class="intervalCardReveal"><a href="./filmes/hellsing.html"
+                rel="noopener" >
+                <h3>Hellsing</h3>
+                <p>
+                  Todos os episódios.
+                </p></a>
+              </article>
+              <article class="intervalCardReveal"><a href="opm.html"
+                rel="noopener" >
+                <h3>One Punch Man</h3>
+                <p>
+                  Todas as temporadas.
+                </p></a>
+                </article>
+                <article class="intervalCardReveal"><a href="arcane.html"
+                  rel="noopener" >
+                  <h3>Arcane</h3>
+                  <p>
+                    Todos os episódios.
+                  </p></a>
+                  </article>
+                  <article class="intervalCardReveal"><a href="deathnote.html"
+                    rel="noopener" >
+                    <h3>Death Note</h3>
+                    <p>
+                      Todas as temporadas.
+                    </p></a>
+                    </article>
+                    <article class="intervalCardReveal"><a href="shamanking.html"
+                      rel="noopener" >
+                      <h3>Shaman King</h3>
+                      <p>
+                        Todos os episódios.
+                      </p></a>
+                      </article>
+                      <article class="intervalCardReveal"><a href="EDNSZRO.html"
+                        rel="noopener" >
+                        <h3>Edens Zero</h3>
+                        <p>
+                          Todos os episódios.
+                        </p></a>
+                        </article>
+                </div>
+          </div>
+        </section>
+  <section>
+  <footer>
+    <div class="grid-layout">
+      <p id="direitos-autorais">© 2022 VICode.com</p>
+      <div>
+        <p>Powered by</p>
+        <img
+          src="assets/icons/logo-vito2.png"
+          alt="logo do VICode"
+          width="60px"
+          height="60px"
+        />
+      </div>
+    </div>
+  </footer>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="module" src="assets/js/main.js"></script>
+  </body>
+</html>
